@@ -1,0 +1,24 @@
+{
+    "name": "AdminBox",
+    "description": "",
+    "dependencies": {
+        "adafruit-metro-m0-express": "*",
+        "keyboard": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "0.13.49",
+        "targetId": "maker"
+    },
+    "supportedTargets": [
+        "maker"
+    ],
+    "preferredEditor": "blocksprj"
+}
