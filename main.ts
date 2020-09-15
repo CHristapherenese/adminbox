@@ -40,33 +40,37 @@ function DriverNumber () {
     if (input.buttonD3.wasPressed() && input.buttonD7.wasPressed()) {
         keyboard.type("9")
     }
-    if (input.buttonD3.wasPressed() && input.buttonD6.wasPressed()) {
+    if (input.buttonD4.wasPressed() && input.buttonD6.wasPressed()) {
         keyboard.type("0")
     }
 }
 // Activates Driver options to be followed by driver Number
 function DriverActions () {
     if (input.buttonD1.wasPressed() && input.buttonD8.wasPressed()) {
-        keyboard.type("1")
+        keyboard.type("!waveby")
         DriverNumber()
         Enter()
     }
     if (input.buttonD2.wasPressed() && input.buttonD8.wasPressed()) {
-        keyboard.type("1")
+        keyboard.type("!eol")
         DriverNumber()
         Enter()
     }
     if (input.buttonD3.wasPressed() && input.buttonD8.wasPressed()) {
-        keyboard.type("1")
+        keyboard.type("!black ")
         DriverNumber()
         Enter()
     }
     if (input.buttonD4.wasPressed() && input.buttonD8.wasPressed()) {
-        keyboard.type("1")
+        keyboard.type("!dq")
         DriverNumber()
         Enter()
     }
-    DriverActions()
+    if (input.buttonD4.wasPressed() && input.buttonD1.wasPressed()) {
+        keyboard.type("!clear")
+        DriverNumber()
+        Enter()
+    }
 }
 forever(function () {
     DriverActions()
