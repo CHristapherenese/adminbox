@@ -1,9 +1,9 @@
 {
-    "name": "AdminBox",
+    "name": "AdminBox Feaher",
     "description": "",
     "dependencies": {
-        "adafruit-metro-m0-express": "*",
-        "keyboard": "*"
+        "keyboard": "*",
+        "adafruit-metro-m0-express": "*"
     },
     "files": [
         "main.blocks",
