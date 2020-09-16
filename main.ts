@@ -1,16 +1,16 @@
-input.touchA1.onEvent(ButtonEvent.LongClick, function () {
-    keyboard.type("!singlefile")
-})
-input.touchA2.onEvent(ButtonEvent.LongClick, function () {
-    keyboard.type("!doublefile")
-})
-input.touchA0.onEvent(ButtonEvent.LongClick, function () {
-    keyboard.type("!yellow")
-})
 function Enter () {
     keyboard.type("$")
     keyboard.key("enter", KeyboardKeyEvent.Press)
 }
+input.buttonA1.onEvent(ButtonEvent.LongClick, function () {
+    keyboard.type("!singlefile")
+})
+input.buttonA0.onEvent(ButtonEvent.LongClick, function () {
+    keyboard.type("!yellow")
+})
+input.buttonA2.onEvent(ButtonEvent.LongClick, function () {
+    keyboard.type("!doublefile")
+})
 // Generates Driver Number
 function DriverNumber () {
     if (input.buttonD1.wasPressed() && input.buttonD5.wasPressed()) {
