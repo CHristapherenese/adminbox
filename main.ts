@@ -2,14 +2,8 @@ function Enter () {
     keyboard.type("$")
     keyboard.key("enter", KeyboardKeyEvent.Press)
 }
-input.buttonA1.onEvent(ButtonEvent.LongClick, function () {
-    keyboard.type("!singlefile")
-})
 input.buttonA0.onEvent(ButtonEvent.LongClick, function () {
     keyboard.type("!yellow")
-})
-input.buttonA2.onEvent(ButtonEvent.LongClick, function () {
-    keyboard.type("!doublefile")
 })
 // Generates Driver Number
 function DriverNumber () {
@@ -72,6 +66,7 @@ function DriverActions () {
         Enter()
     }
 }
+// Simulator does not show because of the amount of inputs
 forever(function () {
     DriverActions()
 })
